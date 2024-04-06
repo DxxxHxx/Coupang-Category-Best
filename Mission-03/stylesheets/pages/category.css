@@ -1,0 +1,318 @@
+/* 카테고리별 추천 광고상품 */
+.wrapper {
+  width: 1020px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+header h1 {
+  width: 246px;
+  height: 56px;
+  margin: 100px 0 48px 0;
+}
+section {
+  width: 100%;
+  height: 1376px;
+}
+section .titleDiv {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 46px;
+  line-height: 5px;
+  margin-bottom: 24px;
+}
+.titleDiv > div:first-child {
+  font-weight: 500;
+  line-height: 0;
+}
+.boldText span {
+  color: var(--color-blue-600);
+}
+.container {
+  height: 634px;
+  display: flex;
+  position: relative;
+  margin-bottom: 24px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-brown-300);
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-brown-300);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.kContainer::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-green-700);
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.kContainer::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-green-700);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.sidebar {
+  width: 174px;
+  /* background-color: tomato; */
+  position: relative;
+}
+.sidebar article h2 {
+  line-height: 0;
+  position: absolute;
+  top: 48px;
+  left: 24px;
+  color: var(--color-brown-300);
+  font-weight: 400;
+}
+.kSidebar article h2 {
+  color: var(--color-green-700);
+}
+.direct {
+  width: 62px;
+  height: 17px;
+  position: absolute;
+  top: 84px;
+  left: 24px;
+  color: var(--color-gray-700);
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.rarr {
+  width: 6px;
+  height: 10px;
+  background-image: url("../../assets/icon/angle-right-default.svg");
+}
+.hotKeyword {
+  width: 87px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 264px;
+  left: 24px;
+}
+.tagList {
+  width: 124px;
+  height: 220px;
+  /* background-color: gold; */
+  position: absolute;
+  bottom: 32px;
+  left: 24px;
+  margin: 0;
+  padding: 8px 0 4px 0;
+}
+.tagList div {
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid var(--color-gray-500);
+  color: var(--color-brown-300);
+}
+.kTagList div {
+  color: var(--color-green-700);
+}
+.w61 {
+  width: 61px;
+}
+.w72 {
+  width: 72px;
+}
+.w83 {
+  width: 83px;
+}
+.w86 {
+  width: 86px;
+}
+.w94 {
+  width: 94px;
+}
+.w106 {
+  width: 106px;
+}
+.w117 {
+  width: 117px;
+}
+.tagList li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.tagList li a {
+  display: inline-block;
+}
+.banner {
+  width: 320px;
+  background-size: cover;
+  position: relative;
+}
+.homeBanner {
+  background-image: url("../../assets/slides/houseware-downy.jpg");
+}
+.homeBannerHidden{
+  background-image: url("../../assets/slides/houseware-dandruff.jpg");
+  display: none;
+}
+.kitchenBanner {
+  background-image: url("../../assets/slides/kitchenware-tumbler.jpg");
+}
+.kitchenBannerHidden {
+  background-image: url("../../assets/slides/kitchenware-lunchbox.jpg");
+  display: none;
+}
+.bannerInfo {
+  position: absolute;
+  width: 260px;
+  height: 90px;
+  bottom: 58px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: var(--color-white);
+  text-align: center;
+}
+.hBannerInfo {
+  background-color: var(--color-brown-300);
+}
+.kBannerInfo {
+  background-color: var(--color-green-700);
+}
+.bannerInfo h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.bannerInfo span {
+  font-size: 14px;
+}
+.indicator {
+  width: 32px;
+  height: 12px;
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.indicator div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+}
+.indicator div:first-child {
+  background-color: var(--color-gray-700);
+}
+.indicator div:last-child {
+  background-color: var(--color-gray-600);
+}
+
+.items {
+  flex-grow: 1;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-gray-600);
+  width: 100%;
+  height: 0.5px;
+  bottom: 50%;
+  left: 0;
+}
+.item {
+  width: 160px;
+  height: 300px;
+  /* background-color: gold;  */
+}
+.item img:first-child {
+  margin-bottom: 12px;
+}
+.info {
+  width: 152px;
+  height: 73px;
+  /* background-color: brown; */
+  margin: 0 auto;
+}
+.infoM {
+  height: 90px;
+}
+.itemName {
+  width: 152px;
+  height: 34px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.nameM {
+  height: 51px;
+}
+.itemPrice {
+  width: 135px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.priceM {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.priceM > div:first-child {
+  color: var(--color-red-500);
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.itemPrice span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.rocket img {
+  width: 54px;
+  height: 14px;
+  margin-left: 6px;
+}
+.rocket {
+  display: flex;
+  align-items: center;
+}
+.discountInfo {
+  display: flex;
+  align-items: flex-start;
+}
